@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="first" placeholder="John" required>
+        </input>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" name="last" placeholder="Smith" required>
+        </input>
+    
+        <div>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="genderChoice" value="male">
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="genderChoice" value="female">
+            <label for="other">Other </label>
+            <input type="radio" id="other" name="genderChoice" value="other">
+        </div>
+        
+        <!-- this email section shows nested structure instead -->
+        <div> 
+            <label>
+                Email: 
+                <input name="emailAddress" type="email" placeholder="your email" required>
+            </label>
+            <label>
+                Password: 
+                <input name="passwordInput" type="password" placeholder="your password"
+                pattern=".{5,10}" required title="Password must be between 5 and 10 characters!">
+            </label>
+        </div>
+        
+        <div>
+            <label>
+            Birthday: 
+                <select name="month">
+                    <option value="" disabled selected>Month</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                </select>
+
+                <select name="day">
+                    <option value="" disabled selected>Day</option>
+                    <option value="day29">29</option>
+                    <option value="day30">30</option>
+                    <option value="day31">31</option>
+                </select>
+                
+                <select name="year">
+                    <option value="" disabled selected>Year</option>
+                    <option value="year1980">1980</option>
+                    <option value="year1981">1981</option>
+                    <option value="year1982">1982</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="agree">I agree to the terms and conditions: </label>
+            <input type="checkbox" id="agree" name="tac" value="agree">
+        </div>
+
+        <p>
+        <button type="submit">Submit!</button>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <!-- form action is where a form sends data to -->
+    <!-- form method is what http method (get / post) -->
+
+    <form action="http://wikipedia.org" method="GET">
+        <label>
+            Email:
+            <input name="username" type="email" placeholder="email">
+        </label>
+        <label>
+            Password:
+            <input name="password" type="password" placeholder="password">
+        </label>
+
+        <input type="submit">
+        <hr>
+        <label for="password1">password1</label>
+        <input id="password1" type="password" placeholder="password1" required>
+        <!-- presence validation (make sure values are present) -->
+        <!-- type validations make sure the types are correct (like emails) -->
+        
+    </form>
+    <br>
+    <form action="http://wikipedia.org" method="GET">
+    <p>Do you prefer cats or dogs?</p>
+        <label for="dogs">Dogs: </label>
+        <input type="radio" id="dogs" name="petChoice" value="DOGS">
+
+        <label for="cats">Cats: </label>
+        <input type="radio" id="cats" name="petChoice" value="CATS">
+
+        <p>What's your favorite color?</p>
+        <select name="color">
+            <option value="redColor">Red</option>
+            <option value="orangeColor">Orange</option>
+            <option value="yellowColor">Yellow</option>
+        </select>
+
+        <input type="text">
+
+        <textarea name="freeformText" id="freeformTextID" cols="10" rows="10"></textarea>
+
+        <button>Go</button>
+    </form>
+        
+        <!-- <input type="checkbox"> -->
+        <!-- input name used in http request -->
+
+</body>
+</html>
+
+<!-- <input type="color">
+<input type="radio"> -->
