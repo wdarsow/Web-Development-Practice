@@ -30,6 +30,8 @@ function factorial(fact1) {
     return result;
 }
 
+// console.log(factorial(9));
+
 // factorial(4) is 4x3x2x1
 
 // 3. kebabToSnake() write a function which takes a single kebab-cased string argument and returns the snake_cased version. 
